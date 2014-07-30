@@ -18,6 +18,9 @@
   "scripts": {
     "postinstall": "bower install",
 
+    "prestart": "npm install; coffee -w -c ./app/*/*.coffee &",
+    "start": "node_modules/http-server/bin/http-server -p 8000",
+
     "pretest": "npm install",
     "test": "node node_modules/karma/bin/karma start test/karma.conf.js",
     "test-single-run": "node node_modules/karma/bin/karma start test/karma.conf.js  --single-run",
