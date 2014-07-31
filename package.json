@@ -18,7 +18,7 @@
   "scripts": {
     "postinstall": "bower install",
 
-    "prestart": "npm install; coffee -w -c ./app/*/*.coffee &",
+    "prestart": "npm install; coffee -c ./app/*/*.coffee",
     "start": "node_modules/http-server/bin/http-server -p 8000",
 
     "pretest": "npm install",
