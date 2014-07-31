@@ -23,9 +23,8 @@ describe 'Github Model', ->
 
   it 'requests my personal details from github', ->
     success = jasmine.createSpy('success')
-    error = (error) -> assert(error)
 
-    GitHub.getUserInfo().then(success, error)
+    GitHub.getUserInfo().then(success)
 
     $httpBackend.flush()
 
